@@ -4,9 +4,10 @@ body {
 
 .main-container {
     background-color: white;
-    width: 98%;
-    
-
+    width: 95%;
+    margin: auto;   
+    /* display: flex; 
+    flex-direction: column;  */
 }
 
 #pics-menu {
@@ -227,4 +228,67 @@ h6 {
     font-style: normal;
     text-align: left;
     color: hsl(236, 13%, 42%)
+}
+
+
+@media only screen and (max-width: 769px) {
+    .menu-icons {
+        display: none;
+    }
+
+
+    .first-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+       
+    }
+    
+    .second-container {
+        /* display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column; */
+        width: 100%;
+    }
+    .third-container {
+        /* font-family: "Inter", sans-serif;
+        font-style: normal;
+        background-color: hsl(240, 100%, 5%); */
+        width: 100%;
+        /* align-items: start; */
+    }
+
+    #center-items {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0rem;
+    
+    }
+
+    #text-at-left {
+        font-family: "Inter", sans-serif;
+        font-weight: 800;
+        font-size: 30px;
+        font-style: normal;
+        text-align: left;
+        color: hsl(240, 100%, 5%);
+        inline-size: 0rem;
+        margin: 0px;
+        padding: 20px;
+        width: 70%;
+    }
+    .botttom-container {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: start;
+        padding: 20px;
+        row-gap: 0rem;
+        margin: 0px;
+        width: 95%;
+    }
+
 }
